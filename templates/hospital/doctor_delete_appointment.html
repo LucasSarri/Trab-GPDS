@@ -21,22 +21,19 @@
     }
   </style>
 </head>
-<!--
-written By : sumit kumar
-facebook : fb.com/sumit.luv
--->
+
 <div class="container">
   <div class="panel panel-primary">
     <div class="panel-heading">
-      <h6 class="panel-title">Delete Your Appointments</h6>
+      <h6 class="panel-title">Delete seus Atendimentos</h6>
     </div>
     <table class="table table-hover" id="dev-table">
       <thead>
         <tr>
-          <th>Patient Name</th>
-          <th>Picture</th>
-          <th>Description</th>
-          <th>Delete</th>
+          <th>Nome do Paciente</th>
+          <th>Foto</th>
+          <th>Descrição</th>
+          <th>Apagar</th>
         </tr>
       </thead>
       {% for a,p in appointments %}
@@ -50,10 +47,4 @@ facebook : fb.com/sumit.luv
     </table>
   </div>
 </div>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
-
 {% endblock content %}
