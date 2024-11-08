@@ -21,10 +21,7 @@
     }
   </style>
 </head>
-<!--
-written By : sumit kumar
-facebook : fb.com/sumit.luv
--->
+
 
 
 <div class="container">
@@ -38,17 +35,17 @@ facebook : fb.com/sumit.luv
   {% if doctors %}
   <div class="panel panel-primary">
     <div class="panel-heading">
-      <h6 class="panel-title"> Total Doctor List</h6>
+      <h6 class="panel-title"> Lista de todos os Doutores</h6>
     </div>
     <table class="table table-hover" id="dev-table">
         <thead>
           <tr>
   
-            <th>Name</th>
-            <th>Profile Picture</th>
-            <th>Mobile</th>
-            <th>Address</th>
-            <th>Department</th>
+            <th>Nome</th>
+            <th>Foto de perfil</th>
+            <th>Telefone</th>
+            <th>Endereço</th>
+            <th>Departamento</th>
            
           </tr>
         </thead>
@@ -66,15 +63,11 @@ facebook : fb.com/sumit.luv
   </div>
   {%else%}
   <br><br><br>
-  <h4 style="text-align: center;color: red;">No Doctor Found !!!</h4>
+  <h4 style="text-align: center;color: red;">Nenhum doutor encontrado !!!</h4>
   {% endif %}
 
 
 </div>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
+
 
 {% endblock content %}

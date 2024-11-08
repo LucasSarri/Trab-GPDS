@@ -55,23 +55,21 @@
 
 {% endif %}
 
-
-<!------ add appointment page by patient(sumit)  ---------->
 <form method="post">
   {% csrf_token %}
   <div class="container register-form">
     <div class="form">
       <div class="note">
-        <p>Book Appointment Details</p>
+        <p>Detalhes do agendamento de consulta</p>
       </div>
       <div class="form-content">
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
-              {% render_field appointmentForm.description class="form-control" placeholder="Description" %}
+              {% render_field appointmentForm.description class="form-control" placeholder="Descrição" %}
             </div>
             <div class="form-group">
-              {% render_field appointmentForm.doctorId class="form-control" placeholder="doctor" %}
+              {% render_field appointmentForm.doctorId class="form-control" placeholder="Doutor" %}
             </div>
             
 
@@ -80,16 +78,11 @@
           </div>
 
         </div>
-        <button type="submit" class="btnSubmit">Book</button>
+        <button type="submit" class="btnSubmit">Agentar</button>
       </div>
     </div>
   </div>
 </form>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
 
 
 {% endblock content %}

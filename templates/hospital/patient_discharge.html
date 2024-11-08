@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>A simple, clean, and responsive HTML invoice template</title>
+  <title>Trabalho de GPDS</title>
 
   <style>
     .invoice-box {
@@ -120,14 +120,14 @@
         <table>
           <tr>
             <td class="title">
-              <h1>Hospital Management</h1>
+              <h1>Gestão Hospitalar</h1>
             </td>
 
             <td>
 
-              Admit Date: {{admitDate}}<br>
-              Release Date: {{releaseDate}}<br>
-              Days Spent: {{daySpent}}
+              Data de admição: {{admitDate}}<br>
+              Data de alta: {{releaseDate}}<br>
+              Dias gastos: {{daySpent}}
             </td>
           </tr>
         </table>
@@ -139,13 +139,13 @@
         <table>
           <tr>
             <td>
-              Patient Name : {{patientName}}<br>
-              Patient Mobile : {{mobile}}<br>
-              Patient Addres : {{address}}<br>
+              Nome do Paciente : {{patientName}}<br>
+              Telefone do Paciente : {{mobile}}<br>
+              Endereço do paciente : {{address}}<br>
             </td>
 
             <td>
-              Doctor Name :<br>
+              Nome do doutor :<br>
               {{assignedDoctorName}}<br>
 
             </td>
@@ -156,7 +156,7 @@
 
     <tr class="heading">
       <td>
-        Disease and Symptoms
+        Doença e Sintomas
       </td>
       <td>
 
@@ -175,13 +175,13 @@
       </td>
 
       <td>
-        Price
+        Preço
       </td>
     </tr>
 
     <tr class="item">
       <td>
-        Room Charge of {{daySpent}} Days
+        Custos diario de {{daySpent}} dias
       </td>
 
       <td>
@@ -191,7 +191,7 @@
 
     <tr class="item">
       <td>
-        Doctor Fee
+        honorários médicos
       </td>
 
       <td>
@@ -201,7 +201,7 @@
 
     <tr class="item">
       <td>
-        Medicine Cost
+        Custo de Medicos
       </td>
 
       <td>
@@ -211,7 +211,7 @@
 
     <tr class="item last">
       <td>
-        Other Charge
+        Outros Custos
       </td>
 
       <td>
@@ -223,7 +223,7 @@
       <td></td>
 
       <td>
-        Total Rupees : {{total}}
+        total Rupees : {{total}}
       </td>
     </tr>
 
@@ -237,14 +237,10 @@
 
 
 {%else%}
-<h5 style="text-align:center;">You Are Not Discharged By Hospital !</h5>
-<h5 style="text-align:center;">Your Treatment Is Going On !</h5><br><br>
-<h6 style="text-align:center;">When You Will Be Discahrged. You Can Download Invoice.</h6>
+<h5 style="text-align:center;">Você nao recebou alta pelo seu hospital !</h5>
+<h5 style="text-align:center;">Seu tratamento esta em andamento !</h5><br><br>
+<h6 style="text-align:center;">Quando você receber alta. Você pode Baixar sua Fatura.</h6>
 {%endif%}
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
+
 <br><br><br><br><br><br><br><br>
 {% endblock content %}

@@ -20,21 +20,18 @@
     }
   </style>
 </head>
-<!--
-written By : sumit kumar
-facebook : fb.com/sumit.luv
--->
+
 <div class="container">
   <div class="panel panel-primary">
     <div class="panel-heading">
-      <h6 class="panel-title">Your Appointments</h6>
+      <h6 class="panel-title">Seus agendamentos</h6>
     </div>
     <table class="table table-hover" id="dev-table">
       <thead>
         <tr>
-          <th>Doctor Name</th>
-          <th>Description</th>
-          <th>Date</th>
+          <th>Nome do Doutor</th>
+          <th>Descrição</th>
+          <th>Data</th>
           <th>Status</th>
         </tr>
       </thead>
@@ -44,19 +41,14 @@ facebook : fb.com/sumit.luv
         <td>{{a.description}}</td>
         <td>{{a.appointmentDate}}</td>
         {%if a.status%}
-        <td> <span class="label label-primary">Confirmed</span></td>
+        <td> <span class="label label-primary">Confirmada</span></td>
         {% else %}
-        <td> <span class="label label-success">Pending</span></td>
+        <td> <span class="label label-success">Pendente</span></td>
         {% endif %}
       </tr>
       {% endfor %}
     </table>
   </div>
 </div>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
 
 {% endblock content %}

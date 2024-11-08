@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>A simple, clean, and responsive HTML invoice template</title>
+  <title>Trabalho GPDS</title>
 
   <style>
     .invoice-box {
@@ -113,14 +113,14 @@
         <table>
           <tr>
             <td class="title">
-              <h1>Hospital Management</h1>
+              <h1>Gerenciamento Hospitalar</h1>
             </td>
 
             <td>
 
-              Admit Date: {{admitDate}}<br>
-              Release Date: {{todayDate}}<br>
-              Days Spent: {{day}}
+              Data de admição: {{admitDate}}<br>
+              data de alta: {{todayDate}}<br>
+              Dias gastos: {{day}}
             </td>
           </tr>
         </table>
@@ -132,13 +132,13 @@
         <table>
           <tr>
             <td>
-              Patient Name : {{name}}<br>
-              Patient Mobile : {{mobile}}<br>
-              Patient Addres : {{address}}<br>
+              Nome do Paciente : {{name}}<br>
+              Telefone do Paciente : {{mobile}}<br>
+              Endereço do Paciente : {{address}}<br>
             </td>
 
             <td>
-              Doctor Name :<br>
+              Nome do Doutor :<br>
               {{assignedDoctorName}}<br>
 
             </td>
@@ -149,7 +149,7 @@
 
     <tr class="heading">
       <td>
-        Disease and Symptoms
+        Doença e Sintomas
       </td>
       <td>
 
@@ -168,7 +168,7 @@
       </td>
 
       <td>
-        Price
+        Preço
       </td>
     </tr>
     <form method="post">
@@ -176,7 +176,7 @@
 
       <tr class="item">
         <td>
-          Room Charge (Per Day)
+          Custo do quarto (por Dia)
         </td>
 
         <td>
@@ -186,7 +186,7 @@
 
       <tr class="item">
         <td>
-          Doctor Fee
+          honorários médicos
         </td>
 
         <td>
@@ -196,7 +196,7 @@
 
       <tr class="item">
         <td>
-          Medicine Cost
+          Custos medicos
         </td>
 
         <td>
@@ -206,7 +206,7 @@
 
       <tr class="item last">
         <td>
-          Other Charge
+          Outros Custos
         </td>
 
         <td>
@@ -226,10 +226,5 @@
   </table>
 </div>
 
-<!--
-   developed By : sumit kumar
-   facebook : fb.com/sumit.luv
-   youtube : youtube.com/lazycoders
-   -->
 
 {% endblock content %}
