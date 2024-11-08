@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
 {% load widget_tweaks %}
-<html lang="en" dir="ltr">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>LazyCoder || sumit</title>
+  <title></title>
   <style type="text/css">
     body {
       color: #aa082e;
@@ -58,53 +58,49 @@
   <br>
   <br>
 
-
-
-
-  <!--- signup page for doctor by admin(sumit)  ---------->
   <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="container register-form">
       <div class="form">
         <div class="note">
-          <p>Register In Hospital</p>
+          <p>Registro de Médicos</p>
         </div>
 
         <div class="form-content">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                {% render_field userForm.first_name class="form-control" placeholder="First Name" %}
+                {% render_field userForm.first_name class="form-control" placeholder="Primeiro nome" %}
               </div>
               <div class="form-group">
-                {% render_field userForm.username class="form-control" placeholder="Username" %}
+                {% render_field userForm.username class="form-control" placeholder="Nome de usuário" %}
               </div>
               <div class="form-group">
-                {% render_field doctorForm.department class="form-control" placeholder="Department" %}
+                {% render_field doctorForm.department class="form-control" placeholder="Especialidade" %}
               </div>
               <div class="form-group">
-                {% render_field doctorForm.address class="form-control" placeholder="Address" %}
+                {% render_field doctorForm.address class="form-control" placeholder="Endereço" %}
               </div>
 
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                {% render_field userForm.last_name class="form-control" placeholder="Last Name" %}
+                {% render_field userForm.last_name class="form-control" placeholder="Último nome" %}
               </div>
               <div class="form-group">
-                {% render_field userForm.password class="form-control" placeholder="Password" %}
+                {% render_field userForm.password class="form-control" placeholder="Senha" %}
               </div>
               <div class="form-group">
                 {% render_field doctorForm.mobile class="form-control"  placeholder="Mobile" %}
               </div>
               <div class="form-group">
-                {% render_field doctorForm.profile_pic required="required" class="form-control" placeholder="Profile Picture" %}
+                {% render_field doctorForm.profile_pic required="required" class="form-control" placeholder="Foto de perfil" %}
               </div>
 
             </div>
           </div>
-          <button type="submit" class="btnSubmit">Register</button>
-          <div class="text-center">Already have an account? <a href="doctorlogin">Login here</a></div>
+          <button type="submit" class="btnSubmit">Registrar</button>
+          <div class="text-center">Já tem uma conta? <a href="doctorlogin">Realize o login aqui</a></div>
         </div>
       </div>
     </div>
@@ -113,10 +109,4 @@
 
   {% include "hospital/footer.html" %}
 </body>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
-
 </html>
