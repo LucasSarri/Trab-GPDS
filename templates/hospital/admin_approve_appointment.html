@@ -19,24 +19,21 @@
     }
   </style>
 </head>
-<!--
-written By : sumit kumar
-facebook : fb.com/sumit.luv
--->
+
 <div class="container">
   <div class="panel panel-primary">
     <div class="panel-heading">
-      <h6 class="panel-title">Appointment Approvals Required</h6>
+      <h6 class="panel-title">Atendimentos aguardando aprovação</h6>
     </div>
     <table class="table table-hover" id="dev-table">
       <thead>
         <tr>
-          <th>Doctor Name</th>
-          <th>Patient Name</th>
-          <th>Description</th>
-          <th>Date</th>
-          <th>Approve</th>
-          <th>Reject</th>
+          <th>Nome do Médico</th>
+          <th>Nome do Paciente</th>
+          <th>Descrição</th>
+          <th>Data</th>
+          <th>Aprovar</th>
+          <th>Rejeitar</th>
         </tr>
       </thead>
       {% for a in appointments %}
@@ -54,10 +51,5 @@ facebook : fb.com/sumit.luv
 
 
 </div>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
 
 {% endblock content %}
