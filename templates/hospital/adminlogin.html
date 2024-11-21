@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 {% load widget_tweaks %}
-<html lang="en" dir="ltr">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>LazyCoder || sumit</title>
+  <title></title>
 
 
   <style type="text/css">
@@ -56,13 +56,12 @@
   <br>
   <br><br>
 
-  <!--- login page for admin by admin(sumit)  ---------->
   <form method="post">
     {% csrf_token %}
     <div class="container register-form">
       <div class="form">
         <div class="note">
-          <p>Admin Login Page</p>
+          <p>Login de Administradores</p>
         </div>
 
         <div class="form-content">
@@ -70,20 +69,20 @@
             <div class="col-md-6">
 
               <div class="form-group">
-                {% render_field form.username class="form-control" placeholder="Username" %}
+                {% render_field form.username class="form-control" placeholder="Nome de Usuário" %}
               </div>
 
             </div>
             <div class="col-md-6">
 
               <div class="form-group">
-                {% render_field form.password class="form-control" placeholder="Password" %}
+                {% render_field form.password class="form-control" placeholder="Senha" %}
               </div>
 
             </div>
           </div>
           <button type="submit" class="btnSubmit">Login</button>
-          <div class="text-center">Do not have account? <a href="adminsignup">Signup here</a></div>
+          <div class="text-center">Ainda não possui uma conta? <a href="adminsignup">Cadastre-se aqui</a></div>
         </div>
       </div>
     </div>
@@ -91,11 +90,6 @@
   </form>
 
   <br><br><br>
-  <!--
-  developed By : sumit kumar
-  facebook : fb.com/sumit.luv
-  youtube : youtube.com/lazycoders
-  -->
 
   {% include "hospital/footer.html" %}
 </body>

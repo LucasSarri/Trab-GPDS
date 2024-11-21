@@ -1,9 +1,6 @@
 {% extends 'hospital/homebase.html' %}
 {% load static %}
-<!--
-written By : sumit kumar
-facebook : fb.com/sumit.luv
--->
+
 
 
 {% block content %}
@@ -35,9 +32,6 @@ facebook : fb.com/sumit.luv
       font-size: 50px;
       color: white;
       text-align: center;
-      -webkit-animation: glow 1s ease-in-out infinite alternate;
-      -moz-animation: glow 1s ease-in-out infinite alternate;
-      animation: glow 1s ease-in-out infinite alternate;
     }
 
     @-webkit-keyframes glow {
@@ -56,13 +50,12 @@ facebook : fb.com/sumit.luv
 
 <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
   <br>
-  <h5 class="display-3 glow">You’ll Love the Way We Care for You</h5>
+  <h5 class="display-3 glow">Você irá amar a forma que iremos cuidar de você</h5>
   <br><br><br><br><br>
   <p>
-  <h3>Emergency ?</h3>
 
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="/patientclick" role="button">Take Appointment</a>
+    <a class="btn btn-primary btn-lg" href="/patientclick" role="button">Agendar atendimento</a>
   </p>
   <br><br>
 </div>
@@ -71,10 +64,6 @@ facebook : fb.com/sumit.luv
 
 {% include "hospital/admin_doctor_patient_card.html" %}
 <br><br><br>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
+
 
 {% endblock content %}

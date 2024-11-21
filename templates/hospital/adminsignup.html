@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
 {% load widget_tweaks %}
-<html lang="en" dir="ltr">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>LazyCoder || sumit</title>
+  <title></title>
   <style type="text/css">
     body {
       color: #aa082e;
@@ -58,51 +58,42 @@
   <br>
   <br>
 
-
-
-
-  <!--- signup page for admin by admin(sumit)  ---------->
   <form method="post">
     {% csrf_token %}
     <div class="container register-form">
       <div class="form">
         <div class="note">
-          <p>Add New Admin To Hospital</p>
+          <p>Cadastro de Administrador</p>
         </div>
 
         <div class="form-content">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                {% render_field form.first_name class="form-control" placeholder="First Name" %}
+                {% render_field form.first_name class="form-control" placeholder="Primeiro Nome" %}
               </div>
               <div class="form-group">
-                {% render_field form.username class="form-control" placeholder="Username" %}
+                {% render_field form.username class="form-control" placeholder="Nome de Usuário" %}
               </div>
 
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                {% render_field form.last_name class="form-control" placeholder="Last Name" %}
+                {% render_field form.last_name class="form-control" placeholder="Sobrenome" %}
               </div>
               <div class="form-group">
-                {% render_field form.password class="form-control" placeholder="Password" %}
+                {% render_field form.password class="form-control" placeholder="Senha" %}
               </div>
 
             </div>
           </div>
-          <button type="submit" class="btnSubmit">Submit</button>
-          <div class="text-center">Already have an account? <a href="adminlogin">Login here</a></div>
+          <button type="submit" class="btnSubmit">Cadastrar</button>
+          <div class="text-center">Já possui uma conta? <a href="adminlogin">Realize o login aqui</a></div>
         </div>
       </div>
     </div>
 
   </form>
-  <!--
-  developed By : sumit kumar
-  facebook : fb.com/sumit.luv
-  youtube : youtube.com/lazycoders
-  -->
 
   {% include "hospital/footer.html" %}
 </body>
